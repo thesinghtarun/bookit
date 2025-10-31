@@ -23,7 +23,7 @@ const ViewDetail: React.FC = () => {
 
   const fetchDetail = async () => {
     try {
-      const res = await fetch(`http://localhost:3000/experiences/${id}`);
+      const res = await fetch(`https://bookit-backend-99nd.onrender.com/experiences/${id}`);
       const data = await res.json();
       // If backend returns { data: {...} }, change to setExperience(data.data)
       setExperience(data);
@@ -50,7 +50,7 @@ const ViewDetail: React.FC = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/bookexperience", {
+      const res = await fetch("https://bookit-backend-99nd.onrender.com/bookexperience", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

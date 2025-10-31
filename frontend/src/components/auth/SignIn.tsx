@@ -15,7 +15,7 @@ const SignIn: React.FC = () => {
     console.log(`Password: ${password}`);
 
     try {
-      const res = await fetch("http://localhost:3000/signin", {
+      const res = await fetch("https://bookit-backend-99nd.onrender.com/signin", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

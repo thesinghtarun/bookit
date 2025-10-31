@@ -28,7 +28,7 @@ const Home: React.FC = () => {
   // Fetch all experiences
   const handleExperiences = async () => {
     try {
-      const res = await fetch("http://localhost:3000/experiences", { method: "GET" });
+      const res = await fetch("https://bookit-backend-99nd.onrender.com/experiences", { method: "GET" });
       const resData: ExperienceResponse = await res.json();
 
       if (res.ok) {
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/search", {
+      const res = await fetch("https://bookit-backend-99nd.onrender.com/search", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name }),
