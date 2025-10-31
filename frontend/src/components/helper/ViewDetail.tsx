@@ -78,7 +78,7 @@ const ViewDetail: React.FC = () => {
     return <p className="text-center mt-10">Loading...</p>;
   }
 
-  const { name, description, image, price, available_date, available_time, location } = experience;
+  const { name, description, image, price, available_date, available_time } = experience;
 
   return (
     <div className="max-w-6xl mx-auto mt-10 bg-white p-6 rounded-xl shadow-md">
