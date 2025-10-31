@@ -37,7 +37,7 @@ const LandingPage: React.FC = () => {
 
       {/* Footer */}
       <footer className="mt-16 text-gray-500 text-sm">
-        © {new Date().getFullYear()} Highway Delite • All rights reserved.
+        © {new Date().getFullYear()} Book It • All rights reserved.
       </footer>
     </div>
   );
